@@ -1,0 +1,136 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    height: 480px;
+    margin-bottom: 20px;
+    border: 2px solid #e4e9db;
+    padding: 15px 15px 0 15px;
+    position: relative;
+}
+
+.card .card-img-top {
+    margin: 20px;
+    display: block;
+    position: relative;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.card-container .card .name {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1f1f1f;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.box {
+    display: inline-flex;
+    position: absolute;
+    bottom: 50px;
+    width: 85px;
+    align-items: center;
+    justify-content: space-between;
+    /*margin-bottom: 15px;*/
+}
+
+.card .box .price-title span.price {
+    font-size: 30px;
+    line-height: 20px;
+    color: #111111;
+    font-family: teaFont, sans-serif;
+    font-weight: 700;
+}
+
+.card .box .price-title {
+    margin-right: 10px;
+    width: 50px;
+    display: inline-flex;
+}
+
+.box .quantity-form {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: -204px;
+    margin-bottom: 15px;
+    margin-right: 12px;
+    justify-content: space-between;
+    width: 100px;
+    height: 35px;
+    background: #f0f1e9;
+    font-size: 18px;
+    margin-left: 0px;
+}
+
+.box .quantity-form button.minus {
+    border: none;
+    border-right: 1px solid #BFD4AD;
+    font-family: sans-serif;
+}
+
+.box .quantity-form button.plus {
+    border: none;
+    border-left: 1px solid #BFD4AD;
+    font-family: sans-serif;
+}
+
+.box .quantity-form input {
+    width: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.bucket-image {
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    z-index: 10;
+}
+
+.add-to-card-btn {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    font-weight: 400;
+    font-family: teaFont, sans-serif;
+    line-height: 1.5;
+    width: 300px;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    /*-webkit-user-select: none;*/
+    /*-moz-user-select: none;*/
+    user-select: none;
+    background-color: #eee;
+    border: 1px solid #bdbdbd;
+    /*padding: .375rem .75rem;*/
+    margin-left: -17px;
+    margin-bottom: -2px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1rem;
+    /*border-radius: .25rem;*/
+    transition: background-color .15s ease-in-out;
+}
+.add-to-card-btn:hover {
+    background-color: #bdbdbd;
+}
+
+.add-to-card-btn.span {
+    margin: 30px;
+}

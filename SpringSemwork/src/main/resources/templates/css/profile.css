@@ -1,0 +1,318 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    float: left;
+    font-family: teaFont, sans-serif;
+}
+
+.menu-btn {
+    border: #597824;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    font-family: teaFont, sans-serif;
+}
+
+.menu-btn:hover {
+    background-color: #BFD4AD;
+}
+
+.menu-btn.active {
+    background-color: #597824;
+    color: white;
+}
+
+.form-content {
+    margin-left: 240px;
+    /*margin-top: 200px;*/
+}
+.discount-block-lk-values {
+    position: relative;
+    /*z-index: 10;*/
+    width: 350px;
+    margin-bottom: 100px;
+}
+
+.discount-block-lk-header {
+    background: #789047;
+    height: 49px;
+}
+
+.discount-block-lk-header .discount-block-lk-left {
+    height: 47px;
+    padding: 12px 0 0 30px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.discount-block-lk-header .discount-block-lk-right {
+    height: 47px;
+    padding: 12px 0 0 16px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.discount-block-lk-right {
+    width: 93px;
+    float: left;
+}
+
+.discount-block-lk-line {
+    position: relative;
+    height: 47px;
+}
+
+.discount-block-lk-left {
+    width: 257px;
+    float: left;
+}
+
+.discount-block-lk-line .discount-block-lk-left {
+    background: #f2f3f0;
+    height: 47px;
+    line-height: 47px;
+    padding-left: 30px;
+    font-size: 13px;
+}
+
+.discount-block-lk-left span {
+    font-family: teaFont,sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #111111;
+}
+
+.discount-block-lk-line .discount-block-lk-right {
+    background: #e5e7e2;
+    height: 47px;
+    line-height: 47px;
+    padding-left: 16px;
+    font-family: teaFont,sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #f3a000;
+}
+
+.clearfloat {
+    clear: both;
+    float: none;
+}
+
+input[type="email"] {
+    font-family: inherit; /* 1 */
+    font-size: inherit; /* 1 */
+    line-height: inherit; /* 1 */
+}
+
+input[type="password"] {
+    font-family: inherit; /* 1 */
+    font-size: inherit; /* 1 */
+    line-height: inherit; /* 1 */
+    margin: 0; /* 2 */
+}
+
+input[type="text"] {
+    font-family: inherit; /* 1 */
+    font-size: inherit; /* 1 */
+    line-height: inherit; /* 1 */
+    margin: 0; /* 2 */
+}
+
+input[type="file"] {
+    font-family: inherit; /* 1 */
+    font-size: inherit; /* 1 */
+    line-height: inherit; /* 1 */
+    margin: 0; /* 2 */
+}
+
+input[type="number"] {
+    font-family: inherit; /* 1 */
+    font-size: inherit; /* 1 */
+    line-height: inherit; /* 1 */
+    margin-top: 10px; /* 2 */
+}
+
+input[type="file"] {
+    font-family: inherit; /* 1 */
+    font-size: inherit; /* 1 */
+    line-height: inherit; /* 1 */
+    margin-top: 10px; /* 2 */
+}
+
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: inherit; /* 1 */
+    line-height: inherit; /* 1 */
+    margin: 0; /* 2 */
+}
+
+.loginForm {
+    position: relative;
+    /*right: 400px;*/
+    height: 300px;
+    align-content: center;
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+    margin-bottom: 100px;
+}
+
+th {
+    border: 1px solid #bdbdbd;
+    background: #597824;
+    color: #eeeeee;
+}
+
+.date {
+    width: 235px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #BFD4AD;
+    padding: 10px;
+    text-align: center;
+}
+
+a{
+    color: #597824;
+}
+
+.loginForm .email-block {
+    /*padding: 30px;*/
+}
+
+.loginForm .password-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.loginForm .name-block {
+    /*position: absolute;*/
+    margin: 10px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.add__btn {
+    /*display: inline-block;*/
+    position: relative;
+    /*bottom: 0;*/
+    font-weight: 400;
+    font-family: teaFont, sans-serif;
+    line-height: 1.5;
+    width: 350px;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    /*-webkit-user-select: none;*/
+    /*-moz-user-select: none;*/
+    user-select: none;
+    background-color: #597824;
+    border: 1px solid #bdbdbd;
+    /*padding: .375rem .75rem;*/
+    margin-left: -16px;
+    /*margin-bottom: -2px;*/
+    /*padding-left: 0px;*/
+    padding-right: 30px;
+    font-size: 1.5rem;
+    /*border-radius: .25rem;*/
+    transition: background-color .15s ease-in-out;
+}
+
+.addItemTable {
+    width: 350px;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    margin-left: -16px;
+}
+
+.td-add-left {
+    border: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.td-add-right {
+    border: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.changeItemForm {
+    /*width: 500px;*/
+}
+
+.changeItemTable {
+    width: 500px;
+}
+
+.text-field-admin__btn {
+    display: inline-block;
+    font-weight: 400;
+    font-family: teaFont, sans-serif;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: #eee;
+    border: 1px solid #bdbdbd;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: background-color .15s ease-in-out;
+}
+
+.update-btn {
+    /*display: inline-block;*/
+    position: relative;
+    /*bottom: 0;*/
+    font-weight: 400;
+    font-family: teaFont, sans-serif;
+    line-height: 1.5;
+    width: 350px;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    /*-webkit-user-select: none;*/
+    /*-moz-user-select: none;*/
+    user-select: none;
+    background-color: #597824;
+    border: 1px solid #bdbdbd;
+    /*padding: .375rem .75rem;*/
+    /*margin-left: -17px;*/
+    margin-top: -100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.5rem;
+    /*border-radius: .25rem;*/
+    transition: background-color .15s ease-in-out;
+}
+
+.delete-btn  {
+
+}
+
+ul {
+    list-style-type: none;
+    margin-left: -40px;
+}
