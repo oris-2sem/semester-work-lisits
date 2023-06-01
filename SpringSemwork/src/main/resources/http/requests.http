@@ -1,0 +1,68 @@
+GET localhost/api/students?page=0&size=2
+Authorization: Bearer d469a780-3e2a-438e-8cd8-4d364c580213
+
+###
+
+GET http://localhost/get-csrf-token
+
+### ADMIN
+
+POST localhost/signIn
+Content-Type: application/json
+
+{
+  "email": "alkon@mail.ru",
+  "password": "!2345"
+}
+
+### USER
+
+POST localhost/signIn
+Content-Type: application/json
+X-CSRF-TOKEN: ffdb0807-c761-47a5-a943-0f3cca18ea96
+
+{
+  "email": "user1@mail.com",
+  "password": "qwerty007!"
+}
+
+###
+
+POST localhost/signUp
+Content-Type: application/json
+X-CSRF-TOKEN: ffdb0807-c761-47a5-a943-0f3cca18ea96
+
+{
+  "name" : "mark",
+  "email" : "masafin@mail.ru",
+  "password" : "!2345"
+}
+
+###
+DELETE localhost/items/11/delete
+Content-Type: application/json
+X-CSRF-TOKEN: ffdb0807-c761-47a5-a943-0f3cca18ea96
+
+###
+POST localhost/items/save
+Content-Type: application/json
+X-CSRF-TOKEN: ffdb0807-c761-47a5-a943-0f3cca18ea96
+
+{
+  "name" : "tea name",
+  "weight" : "123",
+  "price" : "2345",
+  "country" : "RUSSIA",
+  "description" : "tea from http",
+  "itemType" : "tea"
+}
+###
+POST localhost/order/addToCart
+Content-Type: application/json
+X-CSRF-TOKEN: ffdb0807-c761-47a5-a943-0f3cca18ea96
+
+{
+  "itemCount": 2,
+  "itemCost": 35,
+  "itemId": 1
+}
